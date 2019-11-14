@@ -18,10 +18,12 @@
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary" id="centerbutton">Primary</button>
+    <div class="container" id="buttondiv">
+        <button type="button" class="btn btn-primary" id="centerbutton">Primary</button>
+    </div>
 
     <div class="container" id="centerdiv">
-        <h1>Hi Masa.</h1>
+        <h1 class="nootcenter">Hi Masa.</h1>
     </div>
 
     <script src="assets/js/mainlogic.js"></script>
@@ -34,8 +36,15 @@
 </body>
 
 <style>
-    #centertext {
+    .nootcenter {
+        text-align: center;
+    }
+    #centerdiv {
         display: none;
+        text-align: center;
+    }
+
+    #buttondiv {
         text-align: center;
     }
 </style>
