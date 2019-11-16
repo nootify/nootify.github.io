@@ -1,14 +1,21 @@
-let centerbutton = document.getElementById("centerbutton");
-centerbutton.addEventListener("click", centerlogic);
+/*global document, console, alert */
+/* eslint no-console: "off" */
+(function () {
+    "use strict";
 
-function centerlogic() {
-    let centerdiv = document.getElementById("centerdiv");
-    
-    let centerdivState = centerdiv.style.display;
-    if(centerdivState == "block") {
-        centerdivState = "none";
+    function centerlogic() {
+        var centerdiv = document.getElementById("centerdiv");
+
+        if (centerdiv.style.display === "block") {
+            centerdiv.style.display = "none";
+        } else {
+            centerdiv.style.display = "block";
+        }
     }
-    else {
-        centerdivState = "block";
-    }
-}
+
+    var centerbutton = document.getElementById("centerbutton");
+    document.addEventListener("DOMContentLoaded", centerlogic);
+    centerbutton.addEventListener("click", centerlogic);
+
+    // centerlogic();
+}());
