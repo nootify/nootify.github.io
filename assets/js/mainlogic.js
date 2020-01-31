@@ -1,17 +1,20 @@
-"use strict";
+/* eslint-env browser */
+(function () {
+    "use strict";
 
-function centerlogic() {
-    var centerdiv = document.getElementById("centerdiv");
+    function dynamicUpdate() {
+        var dynamicText = document.getElementById("dynamictext");
 
-    if (centerdiv.style.display === "block") {
-        centerdiv.style.display = "none";
-    } else {
-        centerdiv.style.display = "block";
+        if (dynamicText.style.display === "block") {
+            dynamicText.style.display = "none";
+        } else {
+            dynamicText.style.display = "block";
+        }
     }
-}
 
-var centerbutton = document.getElementById("centerbutton");
-document.addEventListener("DOMContentLoaded", centerlogic);
-centerbutton.addEventListener("click", centerlogic);
+    var dynamicButton = document.getElementById("dynamicbutton");
+    document.addEventListener("DOMContentLoaded", dynamicUpdate);
+    dynamicButton.addEventListener("click", dynamicUpdate);
 
-centerlogic();
+    dynamicUpdate();
+}());
