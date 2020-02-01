@@ -71,10 +71,7 @@
                      "I don't mean to sound rude, but...",
                      "Don't you have anything better to do?",
                      ""];
-    text_list = ["...",
-                     "I don't mean to sound rude, but...",
-                     "Don't you have anything better to do?",
-                     ""];
+    
     $(document).ready(function () {
         // Helper function to play ending sequence
         function end() {
