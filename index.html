@@ -7,7 +7,9 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
         <link rel="icon" href="assets/img/noot.ico">
-        <title>Hi There</title>
+        <title>Website Under Construction</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,17 +17,17 @@
     </head>
 
     <body>
-        <div class="aligner container text-center" id="main">
+        <div class="aligner text-center" id="main">
             <div class="aligner-item">
                 <button class="btn btn-primary" id="dynamicbutton">
                     <h3>...</h3>
                 </button>
-                <h1 id="dynamictext">Well, this is awkward.</h1>
+                <div class="row spacer text-center" id="holder">
+                    <h1 id="dynamictext">Hi there.</h1>
+                </div>
             </div>
         </div>
-
-        <script src="assets/js/mainlogic.js"></script>
-
+        
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -33,6 +35,9 @@
     </body>
     
     <style type="text/css">
+        * {
+			font-family: 'Open Sans', sans-serif;
+		}
         .aligner {
             display: flex;
             align-items: center;
@@ -40,7 +45,15 @@
             height: 100vh;
         }
         .aligner-item {
-            max-width: 50%;
+            max-width: 80%;
+        }
+        .spacer {
+            margin-top: 40px;
+        }
+        #dynamictext {
+            margin: auto;
+            display: none;
         }
     </style>
+    <script src="assets/js/mainlogic.js"></script>
 </html>
