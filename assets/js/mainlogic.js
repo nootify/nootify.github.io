@@ -73,6 +73,8 @@
                      ""];
     
     $(document).ready(function () {
+        $("#dynamicbutton").hide();
+        
         // Helper function to play ending sequence
         function end() {
             $("#dynamictext").delay(4000).queue(function (next) {
