@@ -10,6 +10,12 @@ export default {
   */
   target: 'static',
   /*
+  ** Required for non-custom domains
+  */
+  // router: {
+  //   base: '/nootify.github.io/'
+  // },
+  /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
   */
