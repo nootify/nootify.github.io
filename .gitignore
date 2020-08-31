@@ -1,3 +1,5 @@
 # Ignore vue and npm files
 .nuxt
 node_modules
+# Make sure the files are unpacked from here
+dist
