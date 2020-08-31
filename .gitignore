@@ -1,2 +1,3 @@
-
-docs
+# Ignore vue and npm files
+.nuxt
+node_modules
