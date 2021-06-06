@@ -40,6 +40,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // includes styles from semantic-ui-css
+    'semantic-ui-vue/nuxt'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
