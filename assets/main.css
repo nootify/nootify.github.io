@@ -1,0 +1,17 @@
+:root {
+  --color: #d9dcd6;
+  --color-primary: #16425b;
+  --color-secondary: #81c3d7;
+  --color-hover: #3a7ca5;
+  --bg: #2f6690;
+  --bg-secondary: #d9dcd6;
+  --border-color: #ffffff;
+}
+.dark-mode {
+  --color: #ebf4f1;
+  --color-primary: #16425b;
+  --color-secondary: #fdf9f3;
+  --bg: #091a28;
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
+}
